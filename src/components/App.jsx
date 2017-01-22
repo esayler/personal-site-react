@@ -12,7 +12,7 @@ export default class App extends React.Component {
   render () {
     return (
       <div>
-        <h1>Eric's Peronal Site</h1>
+        <h1>Eric's Personal Site</h1>
         <ul role='nav'>
           <li>
             <IndexLink to='/' activeClassName='active'>Home</IndexLink>
