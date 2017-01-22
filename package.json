@@ -1,0 +1,62 @@
+{
+  "name": "personal-site-react",
+  "version": "1.0.0",
+  "description": "a personal portfolio website in React",
+  "main": "./src/index.jsx",
+  "scripts": {
+    "start": "webpack-dev-server --progress",
+    "build": "webpack",
+    "watch": "webpack --progress --watch",
+    "lint": "standard"
+  },
+  "repository": "git@github.com:esayler/personal-site-react.git",
+  "author": "Eric Sayler <easayler@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.7.0",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsx": "^3.2.0",
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "jsdom": "^9.9.1",
+    "locus": "^1.2.0",
+    "mocha": "^3.2.0",
+    "node-sass": "^4.3.0",
+    "nyc": "^10.1.2",
+    "postcss-loader": "^1.2.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-hot-loader": "3.0.0-beta.6",
+    "sass-loader": "^4.1.1",
+    "sinon": "^1.17.7",
+    "standard": "^8.6.0",
+    "style-loader": "^0.13.1",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0"
+  },
+  "keywords": [
+    "personal-site",
+    "portfolio",
+    "react"
+  ]
+}
