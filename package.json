@@ -4,7 +4,7 @@
   "description": "a personal portfolio website in React",
   "main": "./src/index.jsx",
   "scripts": {
-    "start": "webpack-dev-server --progress",
+    "start": "webpack-dev-server --progress --history-api-fallback",
     "build": "webpack",
     "watch": "webpack --progress --watch",
     "lint": "standard"

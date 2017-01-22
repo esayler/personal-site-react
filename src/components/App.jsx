@@ -1,4 +1,6 @@
 import React from 'react'
+import NavLink from './NavLink'
+import { IndexLink } from 'react-router'
 
 export default class App extends React.Component {
   constructor () {
@@ -9,7 +11,23 @@ export default class App extends React.Component {
   }
   render () {
     return (
-      <div>Hello</div>
+      <div>
+        <h1>Eric's Peronal Site</h1>
+        <ul role='nav'>
+          <li>
+            <IndexLink to='/' activeClassName='active'>Home</IndexLink>
+          </li>
+
+          <li>
+            <NavLink to='/about' activeClassName='active'>About</NavLink>
+          </li>
+
+          <li>
+            <NavLink to='/projects' activeClassName='active'>Projects</NavLink>
+          </li>
+        </ul>
+        {this.props.children}
+      </div>
     )
   }
 }
