@@ -13,16 +13,16 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>Eric's Personal Site</h1>
-        <ul role='nav'>
-          <li>
+        <ul className='nav-bar' role='nav'>
+          <li className='nav-item'>
             <IndexLink to='/' activeClassName='active'>Home</IndexLink>
           </li>
 
-          <li>
+          <li className='nav-item'>
             <NavLink to='/about' activeClassName='active'>About</NavLink>
           </li>
 
-          <li>
+          <li className='nav-item'>
             <NavLink to='/projects' activeClassName='active'>Projects</NavLink>
           </li>
         </ul>
@@ -30,4 +30,8 @@ export default class App extends React.Component {
       </div>
     )
   }
+}
+
+App.propTypes = {
+  children: React.PropTypes.node
 }
