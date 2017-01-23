@@ -38,8 +38,22 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader?modules',
+          'css-loader',
           'postcss-loader'
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader?sourceMap',
+          // 'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: resolve(__dirname, 'node_modules/normalize-scss/sass')
+            }
+          }
         ]
       }
     ]
