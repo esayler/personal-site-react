@@ -15,3 +15,7 @@ export default class Projects extends React.Component {
     )
   }
 }
+
+Projects.propTypes = {
+  children: React.PropTypes.node
+}

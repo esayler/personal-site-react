@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:100,200,300,400,600,700,800');
+@import 'normalize';
+@import './variables';
+
+
+body {
+  font-family: 'Overpass', sans-serif;
+}
+
+
+header {
+  & a {
+    text-decoration: none;
+    cursor: auto;
+    &:active {
+      color: red;
+    }
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        filter:opacity(75%);
+      }
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 52px;
+  margin: 0 auto;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+
+.nav-bar {
+  display: block;
+  text-align: center;
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.nav-item {
+  display: inline-flex;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 40px;
+  height: 40px;
+  padding: 10px 10px;
+  border-radius: 10px;
+
+
+  & a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+  }
+
+  & .active {
+    font-weight: 800;
+  }
+
+  &:hover {
+    background-color: $alizarin;
+  }
+}
